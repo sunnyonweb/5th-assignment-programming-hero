@@ -63,13 +63,14 @@ for (const call of calls){
         navCoin -= 20;
         document.getElementById('nav-coin').innerText = navCoin;
 
+        const cardTitle2 = card.querySelector('h2').innerText;
         const callHistory = document.getElementById('call-history');
         const time = new Date().toLocaleTimeString();
 
         const callDiv = document.createElement('div');
-        callDiv.className = 'flex justify-between items-center p-2 shadow-md bg-gray-50 text-left gap-3 mt-4';
+        callDiv.className = 'flex justify-between items-center p-2 shadow-md bg-gray-50 text-left gap-3 mt-4 rounded-lg';
         callDiv.innerHTML = `
-            <h2 class="font-medium">${cardTitle} <br />${cardNumber}</h2>
+            <h2 class="font-medium">${cardTitle2} <br />${cardNumber}</h2>
             <p>${time}</p>
         `;
         callHistory.appendChild(callDiv);
@@ -77,3 +78,9 @@ for (const call of calls){
 }
 
 // for clean
+const clearBtn =document.getElementById('clear-btn');
+
+clearBtn.addEventListener('click', function(){
+    const callHistory= document.getElementById('call-history');
+    callHistory.innerHTML = '';
+})
