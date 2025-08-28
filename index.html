@@ -16,11 +16,11 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-[#f5fff6] max-w-full mx-auto">
+<body class="bg-[#f5fff6] max-w-full mx-auto hind-madurai">
     <!-- Header section -->
     <header class="" >
             <!-- Navbar Section -->
-         <nav class="flex flex-col md:justify-center items-center  px-6 py-2  bg-white md:flex-row">
+         <nav class="flex flex-col md:justify-between items-center  px-6 py-2  bg-white md:flex-row">
             <!-- logo -->
             <div class="flex gap-3 justify-center items-center">
                 <img src="./assets/logo.png" alt="" class="w-10 ">
@@ -30,7 +30,7 @@
             <div class="flex gap-5">
                 <!-- heart -->
                 <div class="flex px-4 py-2 justify-center items-center bg-[rgba(65,255,107,0.1)] rounded-3xl">
-                    <p class="mr-2 inter-normal font-extrabold">0</p>
+                    <span id="nav-heart" class="mr-2 inter-normal font-extrabold">0</span>
                     <img src="./assets/heart.png" alt="" class="w-6">
                 </div>
                 <!-- Coin -->
@@ -48,28 +48,28 @@
             <!-- Banner Section -->
              <section class="gap-3 py-5 px-8 flex flex-col justify-center items-center bg-[linear-gradient(90deg,rgba(1,50,35,1),rgba(0,103,71,1)_50%,rgba(1,50,35,1)_100%)]">
                 <img src="./assets/logo-dark.png" alt="" class="h-24 w-24">
-                <h1 class="font-bold text-2xl text-white hind-madurai">জরুরি সেবা ডিরেক্টরি</h1>
-                <p class=" font-semibold text-white hind-madurai text-center">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+                <h1 class="font-bold text-2xl text-white ">জরুরি সেবা ডিরেক্টরি</h1>
+                <p class=" font-semibold text-white text-center">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
              </section>
     </header>
     <!-- Main Section -->
      <main class=" max-w-full">
         <div class="w-11/12 mx-auto my-10 grid grid-cols-12 gap-7">
             <!-- left div -->
-            <div class=" grid col-span-9 grid-cols-3 gap-4">
+            <div class=" grid col-span-12 md:col-span-7 lg:col-span-8 xl:col-span-9 grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
                 <!-- card 1 -->
                 <div class="bg-white p-4 shadow-md rounded-xl">
 
                     <div class="flex justify-between items-center">
                         <img src="./assets/emergency.png" alt="" class=" w-12 p-2 bg-[#ffe3e2] rounded-lg">
-                        <span class=""><i class="fa-regular fa-heart"></i></span>
+                        <span class=""><i class="fa-regular fa-heart text-2xl card-heart"></i></span>
                     </div>
                     <div class="mt-2">
-                        <h2 class=" text-[#111111] .hind-madurai font-bold">জাতীয় জরুরি সেবা</h2>
+                        <h2 class=" text-[#111111] font-bold">জাতীয় জরুরি সেবা</h2>
                         <p class=" text-[#5c5c5c] ">National Emergency</p>
                         <div class="mt-6">
                             <h2 class="font-bold text-3xl">999</h2>
-                            <p class="text-sm text-[#5c5c5c] hind-madurai w-22 py-2 px-4 bg-[#f2f2f2] rounded-2xl">সার্বজনীন</p>
+                            <p class="text-sm text-[#5c5c5c] w-22 py-2 px-4 bg-[#f2f2f2] rounded-2xl">সার্বজনীন</p>
                         </div>
                     </div>
                     <div class="flex justify-center items-center gap-1 mt-6">
@@ -92,14 +92,14 @@
 
                     <div class="flex justify-between items-center">
                         <img src="./assets/police.png" alt="" class=" w-12 p-2 bg-[#ffe3e2] rounded-lg">
-                        <span class=""><i class="fa-regular fa-heart"></i></span>
+                        <span class=""><i class="fa-regular fa-heart text-2xl card-heart"></i></span>
                     </div>
                     <div class="mt-2">
-                        <h2 class=" text-[#111111] .hind-madurai font-bold">পুলিশ</h2>
+                        <h2 class=" text-[#111111]  font-bold">পুলিশ</h2>
                         <p class=" text-[#5c5c5c] ">Police</p>
                         <div class="mt-6">
                             <h2 class="font-bold text-3xl">999</h2>
-                            <p class="text-sm text-[#5c5c5c] hind-madurai w-18 py-2 px-4 bg-[#f2f2f2] rounded-2xl">পুলিশ</p>
+                            <p class="text-sm text-[#5c5c5c] w-18 py-2 px-4 bg-[#f2f2f2] rounded-2xl">পুলিশ</p>
                         </div>
                     </div>
                     <div class="flex justify-center items-center gap-1 mt-6">
@@ -122,14 +122,14 @@
 
                     <div class="flex justify-between items-center">
                         <img src="./assets/fire-service.png" alt="" class=" w-12 p-2 bg-[#ffe3e2] rounded-lg">
-                        <span class=""><i class="fa-regular fa-heart"></i></span>
+                        <span class=""><i class="fa-regular fa-heart text-2xl card-heart"></i></span>
                     </div>
                     <div class="mt-2">
-                        <h2 class=" text-[#111111] .hind-madurai font-bold">ফায়ার সার্ভিস</h2>
+                        <h2 class=" text-[#111111]  font-bold">ফায়ার সার্ভিস</h2>
                         <p class=" text-[#5c5c5c] ">Fire Service</p>
                         <div class="mt-6">
                             <h2 class="font-bold text-3xl">999</h2>
-                            <p class="text-sm text-[#5c5c5c] hind-madurai w-18 py-2 px-4 bg-[#f2f2f2] rounded-2xl">ফায়ার</p>
+                            <p class="text-sm text-[#5c5c5c]  w-18 py-2 px-4 bg-[#f2f2f2] rounded-2xl">ফায়ার</p>
                         </div>
                     </div>
                     <div class="flex justify-center items-center gap-1 mt-6">
@@ -152,14 +152,14 @@
 
                     <div class="flex justify-between items-center">
                         <img src="./assets/ambulance.png" alt="" class=" w-12 p-2 bg-[#ffe3e2] rounded-lg">
-                        <span class=""><i class="fa-regular fa-heart"></i></span>
+                        <span class=""><i class="fa-regular fa-heart text-2xl card-heart"></i></span>
                     </div>
                     <div class="mt-2">
-                        <h2 class=" text-[#111111] .hind-madurai font-bold">অ্যাম্বুলেন্স</h2>
+                        <h2 class=" text-[#111111]  font-bold">অ্যাম্বুলেন্স</h2>
                         <p class=" text-[#5c5c5c] ">Ambulance</p>
                         <div class="mt-6">
                             <h2 class="font-bold text-3xl">1994-999999</h2>
-                            <p class="text-sm text-[#5c5c5c] hind-madurai w-16 py-2 px-4 bg-[#f2f2f2] rounded-2xl">স্বাস্থ্য</p>
+                            <p class="text-sm text-[#5c5c5c] w-16 py-2 px-4 bg-[#f2f2f2] rounded-2xl">স্বাস্থ্য</p>
                         </div>
                     </div>
                     <div class="flex justify-center items-center gap-1 mt-6">
@@ -182,14 +182,14 @@
 
                     <div class="flex justify-between items-center">
                         <img src="./assets/emergency.png" alt="" class=" w-12 p-2 bg-[#ffe3e2] rounded-lg">
-                        <span class=""><i class="fa-regular fa-heart"></i></span>
+                        <span class=""><i class="fa-regular fa-heart text-2xl card-heart"></i></span>
                     </div>
                     <div class="mt-2">
-                        <h2 class=" text-[#111111] .hind-madurai font-bold">নারী ও শিশু সহায়তা</h2>
+                        <h2 class=" text-[#111111]  font-bold">নারী ও শিশু সহায়তা</h2>
                         <p class=" text-[#5c5c5c] ">Women & Child Helpline</p>
                         <div class="mt-6">
                             <h2 class="font-bold text-3xl">999</h2>
-                            <p class="text-sm text-[#5c5c5c] hind-madurai w-22 py-2 px-4 bg-[#f2f2f2] rounded-2xl">সহায়তা</p>
+                            <p class="text-sm text-[#5c5c5c]  w-22 py-2 px-4 bg-[#f2f2f2] rounded-2xl">সহায়তা</p>
                         </div>
                     </div>
                     <div class="flex justify-center items-center gap-1 mt-6">
@@ -212,14 +212,14 @@
 
                     <div class="flex justify-between items-center">
                         <img src="./assets/emergency.png" alt="" class=" w-12 p-2 bg-[#ffe3e2] rounded-lg">
-                        <span class=""><i class="fa-regular fa-heart"></i></span>
+                        <span class=""><i class="fa-regular fa-heart text-2xl card-heart"></i></span>
                     </div>
                     <div class="mt-2">
-                        <h2 class=" text-[#111111] .hind-madurai font-bold">দুদক</h2>
+                        <h2 class=" text-[#111111]  font-bold">দুদক</h2>
                         <p class=" text-[#5c5c5c] ">Anti-Corruption</p>
                         <div class="mt-6">
                             <h2 class="font-bold text-3xl">106</h2>
-                            <p class="text-sm text-[#5c5c5c] hind-madurai w-22 py-2 px-4 bg-[#f2f2f2] rounded-2xl">সরকারি</p>
+                            <p class="text-sm text-[#5c5c5c] w-22 py-2 px-4 bg-[#f2f2f2] rounded-2xl">সরকারি</p>
                         </div>
                     </div>
                     <div class="flex justify-center items-center gap-1 mt-6">
@@ -242,14 +242,14 @@
 
                     <div class="flex justify-between items-center">
                         <img src="./assets/emergency.png" alt="" class=" w-12 p-2 bg-[#ffe3e2] rounded-lg">
-                        <span class=""><i class="fa-regular fa-heart"></i></span>
+                        <span class=""><i class="fa-regular fa-heart text-2xl card-heart"></i></span>
                     </div>
                     <div class="mt-2">
-                        <h2 class=" text-[#111111] .hind-madurai font-bold">বিদ্যুৎ বিভ্রাট</h2>
+                        <h2 class=" text-[#111111]  font-bold">বিদ্যুৎ বিভ্রাট</h2>
                         <p class=" text-[#5c5c5c] ">Electricity Outage</p>
                         <div class="mt-6">
                             <h2 class="font-bold text-3xl">16216</h2>
-                            <p class="text-sm text-[#5c5c5c] hind-madurai w-18 py-2 px-4 bg-[#f2f2f2] rounded-2xl">বিদ্যুৎ</p>
+                            <p class="text-sm text-[#5c5c5c]  w-18 py-2 px-4 bg-[#f2f2f2] rounded-2xl">বিদ্যুৎ</p>
                         </div>
                     </div>
                     <div class="flex justify-center items-center gap-1 mt-6">
@@ -272,14 +272,14 @@
 
                     <div class="flex justify-between items-center">
                         <img src="./assets/emergency.png" alt="" class=" w-12 p-2 bg-[#ffe3e2] rounded-lg">
-                        <span class=""><i class="fa-regular fa-heart"></i></span>
+                        <span class=""><i class="fa-regular fa-heart text-2xl card-heart"></i></span>
                     </div>
                     <div class="mt-2">
-                        <h2 class=" text-[#111111] .hind-madurai font-bold">ব্র্যাক</h2>
+                        <h2 class=" text-[#111111] font-bold">ব্র্যাক</h2>
                         <p class=" text-[#5c5c5c] ">Brac</p>
                         <div class="mt-6">
                             <h2 class="font-bold text-3xl">16445</h2>
-                            <p class="text-sm text-[#5c5c5c] hind-madurai w-22 py-2 px-4 bg-[#f2f2f2] rounded-2xl">এনজিও</p>
+                            <p class="text-sm text-[#5c5c5c]  w-22 py-2 px-4 bg-[#f2f2f2] rounded-2xl">এনজিও</p>
                         </div>
                     </div>
                     <div class="flex justify-center items-center gap-1 mt-6">
@@ -302,14 +302,14 @@
 
                     <div class="flex justify-between items-center">
                         <img src="./assets/emergency.png" alt="" class=" w-12 p-2 bg-[#ffe3e2] rounded-lg">
-                        <span class=""><i class="fa-regular fa-heart"></i></span>
+                        <span class=""><i class="fa-regular fa-heart text-2xl card-heart"></i></span>
                     </div>
                     <div class="mt-2">
-                        <h2 class=" text-[#111111] .hind-madurai font-bold">বাংলাদেশ রেলওয়ে</h2>
+                        <h2 class=" text-[#111111] font-bold">বাংলাদেশ রেলওয়ে</h2>
                         <p class=" text-[#5c5c5c] ">Bangladesh Railway</p>
                         <div class="mt-6">
                             <h2 class="font-bold text-3xl">163</h2>
-                            <p class="text-sm text-[#5c5c5c] hind-madurai w-22 py-2 px-4 bg-[#f2f2f2] rounded-2xl">পরিবহন</p>
+                            <p class="text-sm text-[#5c5c5c]  w-22 py-2 px-4 bg-[#f2f2f2] rounded-2xl">পরিবহন</p>
                         </div>
                     </div>
                     <div class="flex justify-center items-center gap-1 mt-6">
@@ -329,17 +329,20 @@
             </div>
 
             <!-- right div -->
-             <div class="col-span-3 bg-white shadow-md p-4">
-                <div class="">
-                    <div>
-                        <p><i class="fa-solid fa-clock-rotate-left"></i> Call History</p>
+             <div class="col-span-12 md:col-span-5 lg:col-span-4 xl:col-span-3 bg-white shadow-md p-3 mt-6 md:mt-0 rounded-xl">
+                <div class="flex justify-between ">
+                    <div class="flex items-center">
+                        <p class="text-xl font-bold"><i class="fa-regular fa-clock text-[#999999] "></i> Call History</p>
                     </div>
-                    <button class="bg-green-600">Clear</button>
+                    <button class="bg-green-600 px-8 py-2 rounded-3xl text-lg text-white font-medium">Clear</button>
                 </div>
                 <!-- call history -->
                 <div class="mt-4"></div>
              </div>
         </div>
      </main>
+
+     <!--  js script -->
+     <script src="./hot.js"></script>
 </body>
 </html>
